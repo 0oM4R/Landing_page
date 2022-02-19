@@ -33,7 +33,7 @@ This project aims to give you real-world scenarios of manipulating the DOM. The 
 >>  When clicking an item from the navigation menu, the link should scroll to the appropriate section.
 >> - Useing addEventListener to listen to events.
 >> - A smooth scrolling behavior is expected in the project.
-
+>
 
 
 [(Back to top)](#table-of-contents)
