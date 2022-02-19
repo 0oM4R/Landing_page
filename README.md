@@ -11,7 +11,9 @@ Landing_page is first project in **[FWD professional web development track](http
 - [Footer](#footer)
 - 
 # Installation
+
 [(Back to top)](#table-of-contents)
+
 It's so simple just clone the repo or download the zip file !
 ```git clone https://github.com/0oM4R/Landing_page.git```
 Then open index.html file with any browser 
@@ -26,12 +28,11 @@ This project aims to give you real-world scenarios of manipulating the DOM. The 
 > #### Navigation
 > - Navigation is built dynamically as an unordered list. Start with empty ul and dynamically build navigation using Append, appendChild, and innerHTML.
 > #### Section Active State
-> It should be clear which section is being viewed while scrolling through the page.
->> - Tip: Detect the element location relative to the viewport using .getBoundingClientRect() built-in function.
+>> It should be clear which section is being viewed while scrolling through the page.
 > #### Scroll to Anchor
->  When clicking an item from the navigation menu, the link should scroll to the appropriate section.
-> - Useing addEventListener to listen to events.
-> - A smooth scrolling behavior is expected in the project.
+>>  When clicking an item from the navigation menu, the link should scroll to the appropriate section.
+>> - Useing addEventListener to listen to events.
+>> - A smooth scrolling behavior is expected in the project.
 
 
 [(Back to top)](#table-of-contents)
