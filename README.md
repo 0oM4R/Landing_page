@@ -29,11 +29,8 @@ This project aims to give you real-world scenarios of manipulating the DOM. The 
 > It should be clear which section is being viewed while scrolling through the page.
 >> - Tip: Detect the element location relative to the viewport using .getBoundingClientRect() built-in function.
 > #### Scroll to Anchor
-> - When clicking an item from the navigation menu, the link should scroll to the appropriate section.
-> - You can use the following methods to fulfill this criterion:
-> - Use addEventListener('click',....) to listen to the click event.
-> - Use preventDefault() as if there is a default event occurring we need to stop that.
-> - There are several javascript methods for scrolling, scroll(), scrollBy(), and scrollIntoView() are all >> acceptable.
+>  When clicking an item from the navigation menu, the link should scroll to the appropriate section.
+> - Useing addEventListener to listen to events.
 > - A smooth scrolling behavior is expected in the project.
 
 
