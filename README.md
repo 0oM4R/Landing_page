@@ -1,4 +1,4 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)
+
 # Landing_page
 Landing_page is first project in **[FWD professional web development track](https://egfwd.com/specializtion/professional-web-development)** practicing on javaScript and DOM 
 
@@ -27,7 +27,7 @@ This project aims to give you real-world scenarios of manipulating the DOM. The 
 >> - Navigation is built dynamically as an unordered list. Start with empty ul and dynamically build navigation using Append, appendChild, and innerHTML.
 >> #### Section Active State
 >> It should be clear which section is being viewed while scrolling through the page.
-  - Tip: Detect the element location relative to the viewport using .getBoundingClientRect() built-in function.
+>>> - Tip: Detect the element location relative to the viewport using .getBoundingClientRect() built-in function.
 >> #### Scroll to Anchor
 >> - When clicking an item from the navigation menu, the link should scroll to the appropriate section.
 >> - You can use the following methods to fulfill this criterion:
