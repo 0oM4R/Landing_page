@@ -1,13 +1,30 @@
-# Landing Page Project
+# Landing_page
+Landing_page is first project in **[FWD professional web development track](https://egfwd.com/specializtion/professional-web-development)** practicing on javaScript and DOM 
 
-## Table of Contents
+# Table of contents
+- [Project Title](#Landing_page)
+- [Table of contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#Usage)
 
-* [Instructions](#instructions)
+# Installation
+[(Back to top)](#table-of-contents)
 
-## Instructions
-
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+It's so simple just clone the repo or download the zip file !
+```git clone https://github.com/0oM4R/Landing_page.git```
+Then open index.html file with any browser 
+# Usage 
+### Project Summary
+This project aims to give you real-world scenarios of manipulating the DOM. The functionality you will be using serves two purposes: to prepare you for appending dynamically added data to the DOM, and to show you how javascript can improve the usability of an otherwise static site. This project barely touches the surface of what is possible, but it does use some incredibly common events, methods, and logic.
+### Waht this project do ? 
+ to make it more clear there is main behaior points I'll explain here :
+> #### Navigation
+>> Navigation is built dynamically as an unordered list. Start with empty ul and dynamically build navigation using Append, appendChild, and innerHTML.
+> #### Section Active State
+>> It should be clear which section is being viewed while scrolling through the page.
+> #### Scroll to Anchor
+>>  When clicking an item from the navigation menu, the link should scroll to the appropriate section.
+>> - Useing addEventListener to listen to events.
+>> - A smooth scrolling behavior is expected in the project.
+>
+[(Back to top)](#table-of-contents)
