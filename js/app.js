@@ -100,13 +100,15 @@ function IsActive (){
     for (let section of sections){
        if(IsInViewport(section) ){
        for (let link of links) {
-        link.classList.remove("your-active-nav");
-        if (link.textContent == section.getAttribute("data-nav")) {
-           console.log(link.innerText, section.getAttribute("data-nav"));
-           link.classList.add("your-active-nav");
+           //loop on all the links and remove the active nav class
+            link.classList.remove("your-active-nav");
+            console.log(link)
+           //see if the text in a inside li element is matchig the data-nav of section 
+             if (link.textContent == section.getAttribute("data-nav")) {
+                //add active class to nav section 
+                link.classList.add("your-active-nav");
+            }
         }
-      }
-        
             //IsInViewport retuns true if the section is in viewport so we set the active state 
             section.classList.add('your-active-class')
         }else  section.classList.remove('your-active-class')  
