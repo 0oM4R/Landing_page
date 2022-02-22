@@ -43,7 +43,7 @@ function CreateMenuContent() {
         //create list element
         listItem = document.createElement('li');
         // add item body to list item
-        listItem.innerHTML = `<a class='menu__link' href='#${sectionUrl}'>${sectionTitle}</a>`;
+        listItem.innerHTML = `<a class='menu__link'  href='#${sectionUrl}'>${sectionTitle}</a>`;
         fragment.appendChild(listItem);
     }
     
@@ -76,7 +76,7 @@ function IsInViewport(element) {
 // function to showNav and wait a while then hide by calling hideNav()
 function showNav(){
     menu.style.display = 'block';
-    setTimeout(hideNav,8000);
+    setTimeout(hideNav,10000);
 }
 function hideNav(){
     menu.style.display = 'none';
@@ -96,9 +96,17 @@ CreateMenuContent();
 
 function IsActive (){
     //loop through all the sections to set the active state to the section in viewport
-   
+    
     for (let section of sections){
-        if(IsInViewport(section) ){
+       if(IsInViewport(section) ){
+       for (let link of links) {
+        link.classList.remove("your-active-nav");
+        if (link.textContent == section.getAttribute("data-nav")) {
+           console.log(link.innerText, section.getAttribute("data-nav"));
+           link.classList.add("your-active-nav");
+        }
+      }
+        
             //IsInViewport retuns true if the section is in viewport so we set the active state 
             section.classList.add('your-active-class')
         }else  section.classList.remove('your-active-class')  
@@ -110,6 +118,7 @@ function IsActive (){
 // Scroll to anchor ID using scrollTO event
 function scrollToAnchor (target){
     //when click on the menu we need to get section id 
+    
    document.querySelector(target).scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 }
 // scroll to the top function
@@ -126,6 +135,8 @@ function topFunction(){
 
 // Build menu 
 menu.appendChild(fragment);
+const links = Array.from(document.querySelectorAll("li"));
+
 // Scroll to section on link click
 menu.addEventListener ('click', function (event) {
     event.preventDefault();

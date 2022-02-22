@@ -86,7 +86,7 @@ section {
     color: #000;
 }
 
-.navbar__menu .menu__link:hover,.btn:hover {
+.your-active-nav, .navbar__menu .menu__link:hover,.btn:hover {
     background: #333;
     color: #fff;
     transition: ease 0.3s all;
